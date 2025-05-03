@@ -34,6 +34,18 @@
         border-radius: 8px;
         margin: 1rem 0;
       }
+
+      body.dark {
+        background: #1e1e1e;
+        color: #ddd;
+      }
+      body.dark header {
+        background: #111;
+        color: #fff;
+      }
+      body.dark section {
+        background: #2a2a2a;
+      }
     </style>
   </head>
   <body>
@@ -93,5 +105,12 @@
       <h2>📬 Join the Archery Journey</h2>
       <p>Whether you shoot for fun or focus — aim true and enjoy the ride!</p>
     </section>
+
+    <script>
+      const toggle = document.getElementById("themeToggle");
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
   </body>
 </html>
