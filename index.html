@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AimTrue - Discover Archery</title>
+    <button class="theme">🌙 Dark mode</button>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -35,10 +36,11 @@
         margin: 1rem 0;
       }
 
-      body.dark {
+      .dark {
         background: #1e1e1e;
         color: #ddd;
       }
+
       body.dark header {
         background: #111;
         color: #fff;
@@ -48,6 +50,25 @@
       }
       body.dark section {
         background: #2a2a2a;
+      }
+
+      button {
+        color: #fff;
+        background-color: #111;
+        box-shadow: #1e1e1e 1px 1px;
+        border-radius: 0.3rem;
+        transition: all 200ms ease-in-out;
+        margin: 0.2rem;
+      }
+      button.dark {
+        color: #111;
+        background-color: #fff;
+        box-shadow: #8f8e8e 1px 1px;
+      }
+
+      button:hover {
+        scale: 1.05;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -113,6 +134,24 @@
       toggle.addEventListener("click", () => {
         document.body.classList.toggle("dark");
       });*/
+
+      function changeTheme() {
+        let body = document.querySelector("body");
+        let theme = document.querySelector(".theme");
+
+        if (theme.classList.contains("dark")) {
+          theme.innerHTML = "🌙 Dark mode";
+          theme.classList.remove("dark");
+          body.classList.remove("dark");
+        } else {
+          theme.innerHTML = "🌞 Light mode";
+          theme.classList.add("dark");
+          body.classList.add("dark");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", changeTheme);
     </script>
   </body>
 </html>
