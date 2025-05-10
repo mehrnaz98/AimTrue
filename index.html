@@ -22,6 +22,7 @@
           #ffffff 80%,
           /* White (outer) */ #eeeded 100%
         );
+
         color: #2a2929;
       }
       header {
@@ -51,8 +52,22 @@
         object-fit: cover;
       }
 
-      .dark {
-        background: #1e1e1e;
+      body.dark {
+        background: radial-gradient(
+          circle,
+          #333322 0%,
+          /* Dark version of cornsilk (#fff8dc) */ #4c4c1a 20%,
+          /* Dark gold (from #fffcaa) */ #4b2a30 20%,
+          /* Dark pink (from #ffc0cb) */ #4b2a30 40%,
+          #2a3d4d 40%,
+          /* Darker blue (from #add8e6) */ #2a3d4d 60%,
+          #3a3a3a 60%,
+          /* Dark gray (from #d3d3d3) */ #3a3a3a 80%,
+          #1e1e1e 80%,
+          /* Very dark gray (from #ffffff) */ #111111 100%
+            /* Near-black (from #eeeded) */
+        );
+
         color: #ddd;
       }
 
