@@ -6,6 +6,10 @@
     <title>AimTrue - Discover Archery</title>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -31,9 +35,16 @@
         color: #fff;
         padding: 2rem 1rem;
         text-align: center;
-        display: flex;
-        flex-direction: column;
       }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+
       section {
         padding: 2rem 1rem;
         max-width: 800px;
@@ -77,6 +88,10 @@
       body.dark header {
         background: #111;
         color: #fff;
+      }
+
+      body.dark footer {
+        background: #111;
       }
 
       body.dark h2 {
@@ -209,6 +224,10 @@
         margin: 0;
       }
 
+      .join-club {
+        margin-bottom: 1rem;
+      }
+
       .join-club img {
         background-color: transparent;
         object-fit: contain;
@@ -216,7 +235,7 @@
       }
 
       .footer {
-        background-color: #111;
+        background-color: #222;
         color: #ccc;
         text-align: center;
         padding: 20px;
@@ -240,7 +259,7 @@
         <div class="logo">🎯 AimTrue</div>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#what">What is Archery?</a></li>
+          <li><a href="#intro">What is Archery?</a></li>
           <li><a href="#types">Types of Bows</a></li>
           <li><a href="#fun-facts">Fun Facts</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
@@ -254,7 +273,7 @@
     </header>
 
     <!-- <button id="themeToggle" style="margin: 1rem">🌙 Toggle Dark Mode</button>-->
-    <section>
+    <section id="intro">
       <h2>🏹 What is Archery?</h2>
       <p>
         Archery is the skill of using a bow to shoot arrows. It's one of the
@@ -294,7 +313,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="types">
       <h2>🧷 Types of Archery Bows</h2>
 
       <h3>1. Recurve Bow</h3>
@@ -367,7 +386,7 @@
       </div>
     </section>
 
-    <section class="fun-facts">
+    <section class="fun-facts" id="fun-facts">
       <h2>🎯 Fun Facts About Archery</h2>
       <ul>
         <li>Archery was part of the Olympic Games in ancient Greece.</li>
@@ -381,17 +400,23 @@
       </ul>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h2>💬 Testimonials</h2>
       <div class="testimonial">
-        <img src="https://via.placeholder.com/60" alt="User 1" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/165/555/original/67338e74953975001dd4b463.jfif?1746982392"
+          alt="User 1"
+        />
         <p>
           "AimTrue has reignited my passion for archery. The community is
           fantastic!" - Alex
         </p>
       </div>
       <div class="testimonial">
-        <img src="https://via.placeholder.com/60" alt="User 2" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/165/554/original/491542120877526b7ad29e0f0584e2e7.jpg?1746982383"
+          alt="User 2"
+        />
         <p>
           "The resources and guidance available here are top-notch. Highly
           recommend!" - Jamie
@@ -417,7 +442,7 @@
       </div>
     </section>
 
-    <section class="join-club">
+    <section class="join-club" id="start">
       <h2>📬 Join the Archery Journey</h2>
       <p>
         Archery is more than just hitting a target — it's about mastering
