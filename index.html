@@ -153,6 +153,19 @@
       .testimonial p {
         margin: 0;
       }
+
+      .join-club img {
+        background-color: transparent;
+        object-fit: contain;
+        box-shadow: none;
+        transform: rotate(35deg);
+        transform: translateY(-20px);
+      }
+
+      .join-club img:hover {
+        transform-origin: bottom center;
+        transform: rotate(-10deg);
+      }
     </style>
   </head>
   <body>
@@ -326,7 +339,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="join-club">
       <h2>📬 Join the Archery Journey</h2>
       <p>
         Archery is more than just hitting a target — it's about mastering
@@ -334,16 +347,23 @@
         Whether you're picking up a bow for the first time or you're a seasoned
         archer, there's always something new to discover.
       </p>
-      <p>
-        At AimTrue, we believe in making archery accessible and exciting for
-        everyone. Explore our community tips, training videos, and gear reviews
-        to help you grow with confidence.
-      </p>
-      <p>
-        🔗 Ready to get started? <strong>Follow us</strong> for updates, join
-        our upcoming local meetups, and connect with fellow archers around the
-        world. Your journey begins with a single arrow — let's make it count!
-      </p>
+      <div class="grid">
+        <p>
+          At AimTrue, we believe in making archery accessible and exciting for
+          everyone. Explore our community tips, training videos, and gear
+          reviews to help you grow with confidence. <br /><br />
+          🔗 Ready to get started? <strong>Follow us</strong> for updates, join
+          our upcoming local meetups, and connect with fellow archers around the
+          world. Your journey begins with a single arrow — let's make it count!
+        </p>
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/165/442/original/hand-drawn-bow-arrow.png?1746909476"
+          alt=""
+        />
+
+        <a href="https://storyset.com/sport">Sport illustrations by Storyset</a>
+      </div>
     </section>
 
     <script>
@@ -369,6 +389,15 @@
 
       let button = document.querySelector("button");
       button.addEventListener("click", changeTheme);
+
+      type =
+        "text/javascript" >
+        document.addEventListener("DOMContentLoaded", function () {
+          window.setTimeout(
+            document.querySelector("svg").classList.add("animated"),
+            1000
+          );
+        });
     </script>
   </body>
 </html>
