@@ -45,7 +45,8 @@ The concept for _AimTrue_ stems from a personal fascination with the precision a
 
 ## 🙏 Acknowledgment
 
-This project was developed as part of the **SheCodes Basics Add-on** workshop. While not my first foray into web development, this challenge allowed me to sharpen my existing front-end skills and pay closer attention to design aesthetics, responsive behavior, and interactive elements such as theme toggling. Special thanks to the [SheCodes team] for curating a learning environment that emphasizes both structure and creativity.
+This project was developed as part of the **SheCodes Basics Add-on** workshop. While not my first foray into web development, this challenge allowed me to sharpen my existing front-end skills and pay closer attention to design aesthetics, responsive behavior, and interactive elements such as theme toggling.
+
 **Special thanks to the [SheCodes team](https://www.shecodes.io/) and the [Delacs Foundation](https://www.delac.foundation/)** for their support and commitment to empowering women in tech through accessible and impactful learning experiences.
 
 ## 🔗 Connect with Me
